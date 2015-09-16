@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
 gulp.task('build', function() {
     return browserify({
-        entries: './src/app.jsx',
+        entries: './src/frontend/main.js',
         extensions: ['.jsx'],
         debug: true
     })
@@ -20,11 +20,11 @@ gulp.task('build', function() {
 });
 
 gulp.task('reload', ['build'], function() {
-    return gulp.src('./src/app.jsx').pipe(connect.reload());
+    return gulp.src('./src/frontend/main.js').pipe(connect.reload());
 })
 
 gulp.task('watch', function() {
-    return gulp.watch(['./src/**/*.jsx'], ['reload']);
+    return gulp.watch(['./src/frontend/**/*.js'], ['reload']);
 });
 
 gulp.task('connect', function() {
