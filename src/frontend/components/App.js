@@ -1,39 +1,15 @@
-const AppActions = require('../actions/AppActions');
-const AppStore = require('../stores/AppStore');
 const React = require('react');
+const Link = require('react-router').Link;
 
-function getState() {
-    return {
-        location: AppStore.getArticle()
-    };
-}
-
-const App = React.createClass({
-    getInitialState() {
-        return getState();
-    },
-    componentDidMount: function() {
-        AppStore.addChangeListener(this._onChange);
-    },
-
-    componentWillUnmount: function() {
-        AppStore.removeChangeListener(this._onChange);
-    },
-
+module.exports = React.createClass({
     render() {
         return (
             <div className="app-wrapper">
-                <h1>Article!</h1>
-                <button type="button" className="button mod-success" onClick={this._getArticle}>Click me</button>
+                <ul>
+                    <h1>Welcome!</h1>
+                    <li><Link to='/article/3'>Hello</Link></li>
+                </ul>
             </div>
         )
-    },
-    _getArticle() {
-        AppActions.getArticle(1);
-    },
-    _onChange() {
-        this.setState(getState());
     }
 });
-
-module.exports = App;

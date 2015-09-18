@@ -2,7 +2,7 @@ const Q = require('q');
 const ArticleResouce = {
     getArticle(id) {
         const deferred = Q.defer();
-        deferred.resolve(`Article: {$id}`);
+        deferred.resolve(`${id}`);
         return deferred.promise;
     }
 };

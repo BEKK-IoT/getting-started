@@ -12,8 +12,8 @@ gulp.task('build', function() {
         extensions: ['.jsx'],
         debug: true
     })
-    .transform(reactify)
     .transform(babelify)
+    .transform(reactify)
     .bundle()
     .pipe(source('bundle.js'))
     .pipe(gulp.dest('public'));
