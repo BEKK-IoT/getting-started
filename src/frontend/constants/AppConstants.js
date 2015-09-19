@@ -5,7 +5,7 @@ const AppConstants = {
     		name: 'Arduino',
     		url: 'https://github.com/BEKK-IoT/arduino-uno',
     		git: 'git@github.com:BEKK-IoT/arduino-uno.git',
-    		tasks: ['setup', 'arduino/task/led']
+    		tasks: ['setup', 'arduino/led']
     	},
     	rpi: {
     		name: 'Raspberry Pi',
