@@ -3,7 +3,8 @@ const AppConstants = {
     GADGETS: {
     	arduino : {
     		url: 'https://github.com/BEKK-IoT/arduino-uno',
-    		git: 'git@github.com:BEKK-IoT/arduino-uno.git'
+    		git: 'git@github.com:BEKK-IoT/arduino-uno.git',
+    		tasks: ['setup', 'arduino/task/led']
     	},
     	rpi: {
     		url: 'undefined',
