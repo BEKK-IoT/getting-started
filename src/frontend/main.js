@@ -3,12 +3,15 @@ import { Router, Route, Link } from 'react-router';
 
 import Gadget from './components/Gadget';
 import App from './components/App';
+import Task from './components/Task';
 
 const routes = (
 	<Router>
 		<Route path="/" component={App}>
 		</Route>
-			<Route path="/:gadget" component={Gadget} />
+			<Route path="/device/:gadget" component={Gadget} />
+			<Route path="/task/:task" component={Task} />
+			<Route path="/task/:device/:task" component={Task} />
 	</Router>
 );
 

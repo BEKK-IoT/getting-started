@@ -8,17 +8,19 @@ module.exports = React.createClass({
         const intro = this.props.params.gadget + '/intro'; 
         const gadgetTasks = this.props.params.gadget + '/tasks'; 
         return (
-            <div className="gadget-overview">
+            <div className="app-wrapper gadget">
                 <div>
                     <Article article={intro} />
                 </div>
                 <div>
-                    <h2> Install </h2>
                     <Article article='install'/>
                     <InstallScript gadget={this.props.params.gadget} />
                 </div>
                 <div>
-                    <h2> Tasks </h2>
+                    <Article article='tasks/setup' />
+                </div>
+                <div>
+                    <h2>Tasks</h2>
                     <Tasks gadget={this.props.params.gadget} />
                 </div>
             </div>

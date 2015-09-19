@@ -1,18 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router';
-import Gadget from './Gadget';
 import { GADGETS } from '../constants/AppConstants';
+import Gadget from './Gadget';
+import Tasks from './Tasks';
+
+function getAllTasks(gadgets) {
+    return Object.keys(gadgets)
+        .map(gadget => gadgets[gadget].tasks)
+        .reduce((allTasks, tasks) => {
+            tasks.forEach(t => allTasks.push(t));
+            return allTasks;
+        } , []);
+}
 
 module.exports = React.createClass({
     render() {
         const gadgets = Object.keys(GADGETS);
-        const links = gadgets.map(gadget => <li><Link to={gadget}>{GADGETS[gadget].name}</Link></li>)
         return (
             <div className="app-wrapper">
-                <ul>
-                    <h1>Welcome!</h1>
-                    {links}
-                </ul>
+                <div className="">
+                    <h1>Getting started!</h1>
+                    {gadgets.map(gadget => 
+                        <ul key={gadget}><Link to={'device/' + gadget}>{GADGETS[gadget].name}</Link></ul>
+                    )}
+                </div>
+                <div className="">
+                    <h1>Tasks</h1>
+                    {gadgets.map(gadget => <Tasks gadget={gadget} />)}
+                </div>
             </div>
         )
     }

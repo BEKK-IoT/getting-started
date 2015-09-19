@@ -11,13 +11,13 @@ const AppConstants = {
     		name: 'Raspberry Pi',
     		url: 'undefined',
     		git: 'undefined',
-    		tasks: ['setup']
+    		tasks: []
     	},
     	photon: {
     		name: 'Photon',
     		url: 'https://github.com/BEKK-IoT/photon',
     		git: 'git@github.com:BEKK-IoT/photon.git',
-    		tasks: ['setup']
+    		tasks: []
     	}
     }
 };

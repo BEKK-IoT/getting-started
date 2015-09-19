@@ -1,0 +1,11 @@
+.app-wrapper {
+	width: 800px;
+	margin: auto;
+}
+.app-wrapper > div {
+	padding-bottom: 40px;
+}
+.gadget img {
+	max-width: 300px;
+	-webkit-filter:grayscale(55%);
+}

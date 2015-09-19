@@ -1,4 +1,4 @@
-## Oppsett
+## Configurating the app
 
 Konfigurer devices id
 
