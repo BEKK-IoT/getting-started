@@ -1,5 +1,6 @@
 import React from 'react';
 import Article from './Article';
+import InstallScript from './InstallScript';
 
 module.exports = React.createClass({
     render() {
@@ -8,7 +9,11 @@ module.exports = React.createClass({
         return (
             <div className="gadget-overview">
                 <div><Article article={intro} /></div>
-                <div><Article article='install' /></div>
+                <div>
+                    <h2> Install </h2>
+                    <Article article='install'/>
+                    <InstallScript gadget={this.props.params.gadget} />
+                </div>
                 <div><Article article='tasks' /></div>
                 <div><Article article={gadgetTasks} /></div>
             </div>
