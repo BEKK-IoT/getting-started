@@ -28,13 +28,17 @@ gulp.task('copy:md', function() {
     return gulp.src('./src/text/**/*.md').pipe(gulp.dest('public/dist'));
 });
 
-gulp.task('reload', ['build'], function() {
+gulp.task('reload:js', ['build'], function() {
     return gulp.src('./src/').pipe(connect.reload());
-})
+});
+
+gulp.task('reload:md', ['copy:md'], function() {
+    return gulp.src('./src/').pipe(connect.reload());
+});
 
 gulp.task('watch', function() {
-    gulp.watch(['./src/frontend/**/*.js'], ['reload']);
-    gulp.watch(['./src/text/**/*.md'], ['reload']);
+    gulp.watch(['./src/frontend/**/*.js'], ['reload:js']);
+    gulp.watch(['./src/text/**/*.md'], ['reload:md']);
 });
 
 gulp.task('connect', function() {
