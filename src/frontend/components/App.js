@@ -7,7 +7,7 @@ module.exports = React.createClass({
             <div className="app-wrapper">
                 <ul>
                     <h1>Welcome!</h1>
-                    <li><Link to='/article/3'>Hello</Link></li>
+                    <li><Link to='/arduino'>Hello</Link></li>
                 </ul>
             </div>
         )

@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     source = require('vinyl-source-stream');
 
 
-gulp.task('build', function() {
+gulp.task('build', ['copy:md'], function() {
     return browserify({
         entries: './src/frontend/main.js',
         extensions: ['.jsx'],
@@ -16,7 +16,11 @@ gulp.task('build', function() {
     .transform(reactify)
     .bundle()
     .pipe(source('bundle.js'))
-    .pipe(gulp.dest('public'));
+    .pipe(gulp.dest('public/dist'));
+});
+
+gulp.task('copy:md', function() {
+    return gulp.src('./src/text/**.md').pipe(gulp.dest('public/dist'));
 });
 
 gulp.task('reload', ['build'], function() {

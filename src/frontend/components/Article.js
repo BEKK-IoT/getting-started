@@ -14,7 +14,7 @@ const App = React.createClass({
     },
     componentDidMount: function() {
         AppStore.addChangeListener(this._onChange);
-        AppActions.getArticle(this.props.params.id);
+        AppActions.getArticle(this.props.params.gadget);
     },
 
     componentWillUnmount: function() {
@@ -23,9 +23,7 @@ const App = React.createClass({
 
     render() {
         return (
-            <div className="app-wrapper">
-                <h1>Article {this.state.article}</h1>
-            </div>
+            <div dangerouslySetInnerHTML={{__html: this.state.article}}></div>
         )
     },
     _onChange() {

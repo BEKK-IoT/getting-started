@@ -1,10 +1,19 @@
-const Q = require('q');
-const ArticleResouce = {
+import Q from 'q';
+import request from 'superagent';
+import Remarkable from 'remarkable';
+const md = new Remarkable();
+
+function handleResponse(deferred) {
+    return (err, res) => err ? deferred.reject(err) : deferred.resolve(md.render(res.text));
+}
+
+module.exports = {
     getArticle(id) {
         const deferred = Q.defer();
-        deferred.resolve(`${id}`);
+        request
+            .get(`dist/${id}.md`)
+            .end(handleResponse(deferred));
         return deferred.promise;
     }
 };
 
-module.exports = ArticleResouce;

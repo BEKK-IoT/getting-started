@@ -9,7 +9,7 @@ const CHANGE_EVENT = 'CHANGE';
 let _article = undefined;
 
 function getArticle(id) {
-    ArticleResource.getArticle(`my article ${id}`)
+    ArticleResource.getArticle(id)
         .then(articleFromBackend)
         .catch(errorOnArticle);
 }

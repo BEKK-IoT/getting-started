@@ -8,7 +8,7 @@ const routes = (
 	<Router>
 		<Route path="/" component={App}>
 		</Route>
-			<Route path="/article/:id" component={Article} />
+			<Route path="/:gadget" component={Article} />
 	</Router>
 );
 
