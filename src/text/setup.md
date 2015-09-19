@@ -1,4 +1,4 @@
-## Oppgaver for alle devices
+## Oppsett
 
 Konfigurer devices id
 
