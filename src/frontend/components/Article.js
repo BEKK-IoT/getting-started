@@ -1,20 +1,20 @@
 const AppActions = require('../actions/AppActions');
-const AppStore = require('../stores/AppStore');
+const AppStore = require('../stores/MarkdownStore');
 const React = require('react');
 
-function getState() {
+function getState(id) {
     return {
-        article: AppStore.getArticle()
+        article: AppStore.getArticle(id)
     };
 }
 
 const App = React.createClass({
     getInitialState() {
-        return getState();
+        return getState(this.props.article);
     },
     componentDidMount: function() {
         AppStore.addChangeListener(this._onChange);
-        AppActions.getArticle(this.props.params.gadget);
+        AppActions.getArticle(this.props.article);
     },
 
     componentWillUnmount: function() {
@@ -27,7 +27,7 @@ const App = React.createClass({
         )
     },
     _onChange() {
-        this.setState(getState());
+        this.setState(getState(this.props.article));
     }
 });
 

@@ -1,14 +1,14 @@
 import React from 'react';
 import { Router, Route, Link } from 'react-router';
 
-import Article from './components/Article';
+import Gadget from './components/Gadget';
 import App from './components/App';
 
 const routes = (
 	<Router>
 		<Route path="/" component={App}>
 		</Route>
-			<Route path="/:gadget" component={Article} />
+			<Route path="/:gadget" component={Gadget} />
 	</Router>
 );
 

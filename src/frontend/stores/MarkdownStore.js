@@ -2,21 +2,23 @@ const assign = require('object-assign');
 const AppConstants = require('../constants/AppConstants');
 const AppDispatcher = require('../dispatchers/AppDispatcher');
 const EventEmitter = require('events').EventEmitter;
-const ArticleResource = require('../resources/ArticleResource');
+const MarkdownResource = require('../resources/MarkdownResource');
 
 const CHANGE_EVENT = 'CHANGE';
 
-let _article = undefined;
+let _article = {};
 
 function getArticle(id) {
-    ArticleResource.getArticle(id)
-        .then(articleFromBackend)
+    MarkdownResource.getArticle(id)
+        .then(articleFromBackend(id))
         .catch(errorOnArticle);
 }
 
-function articleFromBackend(res) {
-    _article = res;
-    AppStore.emitChange();
+function articleFromBackend(id) {
+    return (res) => {
+        _article[id] = res;
+        AppStore.emitChange();
+    }
 }
 
 function errorOnArticle(err) {
@@ -24,8 +26,8 @@ function errorOnArticle(err) {
 }
 
 const AppStore = assign(new EventEmitter(), {
-    getArticle() {
-        return _article;
+    getArticle(id) {
+        return _article[id];
     },
     emitChange() {
         this.emit(CHANGE_EVENT);

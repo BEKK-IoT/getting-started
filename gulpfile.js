@@ -3,10 +3,15 @@ var gulp = require('gulp'),
     browserify = require('browserify'),
     reactify = require('reactify'),
     connect = require('gulp-connect'),
-    source = require('vinyl-source-stream');
+    source = require('vinyl-source-stream'),
+    del = require('del');
 
 
-gulp.task('build', ['copy:md'], function() {
+gulp.task('clean', function() {
+    return del.sync(['public/dist']);
+});
+
+gulp.task('build', ['clean', 'copy:md'], function() {
     return browserify({
         entries: './src/frontend/main.js',
         extensions: ['.jsx'],
@@ -20,15 +25,16 @@ gulp.task('build', ['copy:md'], function() {
 });
 
 gulp.task('copy:md', function() {
-    return gulp.src('./src/text/**.md').pipe(gulp.dest('public/dist'));
+    return gulp.src('./src/text/**/*.md').pipe(gulp.dest('public/dist'));
 });
 
 gulp.task('reload', ['build'], function() {
-    return gulp.src('./src/frontend/main.js').pipe(connect.reload());
+    return gulp.src('./src/').pipe(connect.reload());
 })
 
 gulp.task('watch', function() {
-    return gulp.watch(['./src/frontend/**/*.js'], ['reload']);
+    gulp.watch(['./src/frontend/**/*.js'], ['reload']);
+    gulp.watch(['./src/text/**/*.md'], ['reload']);
 });
 
 gulp.task('connect', function() {
