@@ -1,5 +1,6 @@
 .*
 *~
+src/frontend/constants/AccessTokens.js
 node_modules/
 *.swp
 public/dist/
