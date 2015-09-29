@@ -20,3 +20,35 @@ code {
 p > code {
 	color: #eee;
 }
+.export-token {
+    font-family: monospace;
+    color: #cc9393;
+}
+.token-form {
+	margin-top: 20px;
+	padding: 20px 20px 40px 20px;
+	width: 100%;
+	background-color: #000000;
+}
+.token-form-header {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: "Conduit ITC W01 Regular", Arial, sans-serif;
+    margin-bottom: 10px;
+    color: #ebebeb;
+}
+input[type="search"] {
+	background-color: transparent;
+    border: none;
+    font-family: "Conduit ITC W01 Regular", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 0.012em;
+    width: 100%;
+    float: left;
+    color: white;
+    -webkit-transition: border 0.3s ease-out;
+    transition: border 0.3s ease-out;
+    border-bottom: 1px solid #515151;
+    margin-bottom: 20px;
+}
