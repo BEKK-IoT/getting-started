@@ -17,8 +17,8 @@ module.exports = React.createClass({
 		if (id && devices.hasOwnProperty(id.toUpperCase())) {
 			info = (
 				<div className="export-token">
-					<div>export PHOTON_TOKEN="{token}"</div>
-					<div>export PHOTON_DEVICE_ID="{devices[id.toUpperCase()]}"</div>
+					<div>export PARTICLE_TOKEN="{token}"</div>
+					<div>export PARTICLE_DEVICE_ID="{devices[id.toUpperCase()]}"</div>
 				</div>
 			)
 		} else if (id.length >= 4) {

@@ -18,6 +18,4 @@ board.on("ready", function() {
   const led = new five.Led(11);
   led.blink(500);
 });
-
-
 ```
