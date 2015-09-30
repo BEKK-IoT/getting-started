@@ -11,7 +11,7 @@ const AppConstants = {
     		name: 'Photon',
     		url: 'https://github.com/BEKK-IoT/photon',
     		git: 'git@github.com:BEKK-IoT/photon.git',
-    		tasks: []
+    		tasks: ['photon/button']
     	}
     },
     GENERAL_TASKS: ['game/play', 'lamp/controll', 'sphero']
