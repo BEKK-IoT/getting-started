@@ -2,7 +2,7 @@ import React from 'react';
 import Article from './Article';
 import Tasks from './Tasks';
 import InstallScript from './InstallScript';
-import PhotoAccessToken from './PhotoAccessToken';
+import PhotonAccessToken from './PhotonAccessToken';
 
 module.exports = React.createClass({
     render() {
@@ -10,7 +10,7 @@ module.exports = React.createClass({
         const install = this.props.params.gadget + '/install';
         const example = this.props.params.gadget + '/example';
         const gadgetTasks = this.props.params.gadget + '/tasks';
-        const getToken = this.props.params.gadget === 'photon' ? <PhotoAccessToken/> : null;
+        const getToken = this.props.params.gadget === 'photon' ? <PhotonAccessToken/> : null;
         return (
             <div className="gadget">
                 <div>
