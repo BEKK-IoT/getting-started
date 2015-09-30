@@ -3,14 +3,15 @@ import Article from './Article';
 import Tasks from './Tasks';
 import InstallScript from './InstallScript';
 import PhotonAccessToken from './PhotonAccessToken';
+import { GADGETS, GENERAL_TASKS } from '../constants/AppConstants';
 
 module.exports = React.createClass({
     render() {
         const intro = this.props.params.gadget + '/intro';
         const install = this.props.params.gadget + '/install';
         const example = this.props.params.gadget + '/example';
-        const gadgetTasks = this.props.params.gadget + '/tasks';
         const getToken = this.props.params.gadget === 'photon' ? <PhotonAccessToken/> : null;
+        const gadgetTasks = GADGETS[this.props.params.gadget].tasks.concat(GENERAL_TASKS);
         return (
             <div className="gadget">
                 <div>
@@ -32,7 +33,7 @@ module.exports = React.createClass({
                 </div>
                 <div>
                     <h2>Tasks</h2>
-                    <Tasks gadget={this.props.params.gadget} />
+                    <Tasks tasks={gadgetTasks} />
                 </div>
             </div>
         )

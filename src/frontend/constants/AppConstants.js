@@ -5,13 +5,7 @@ const AppConstants = {
     		name: 'Arduino',
     		url: 'https://github.com/BEKK-IoT/arduino-uno',
     		git: 'git@github.com:BEKK-IoT/arduino-uno.git',
-    		tasks: ['arduino/led', 'arduino/sound', 'sphero']
-    	},
-    	rpi: {
-    		name: 'Raspberry Pi',
-    		url: 'undefined',
-    		git: 'undefined',
-    		tasks: []
+    		tasks: ['arduino/led', 'arduino/sound']
     	},
     	photon: {
     		name: 'Photon',
@@ -19,7 +13,8 @@ const AppConstants = {
     		git: 'git@github.com:BEKK-IoT/photon.git',
     		tasks: []
     	}
-    }
+    },
+    GENERAL_TASKS: ['game/play', 'lamp/light', 'sphero']
 };
 
 module.exports = AppConstants;
