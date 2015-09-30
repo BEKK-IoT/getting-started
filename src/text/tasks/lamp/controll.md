@@ -1,4 +1,4 @@
-##Controll the lamp!
+## Controll the lamp!
 
 Be your own god and control the lamp!
 
