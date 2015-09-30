@@ -1,4 +1,4 @@
-## Magic led!
+# The Magic led!
 
 ![Led](https://www.arduino.cc/en/uploads/Tutorial/ExampleCircuit_bb.png)
 

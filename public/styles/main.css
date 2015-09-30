@@ -70,3 +70,7 @@ input[type="search"] {
 .export-token-content{
 	padding-top: 10px;
 }
+
+img{
+	max-height: 300px;
+}
