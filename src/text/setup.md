@@ -1,4 +1,4 @@
-## Getting familier with the libraries
+## Getting familiar with the libraries
 
 All the devices shares a common library **devices-core**. The library consist of two wrappers to make your life easier.
 One wrapper for Firebase and one wrapper for Johnny-Five.
