@@ -13,7 +13,7 @@ module.exports = React.createClass({
         const getToken = this.props.params.gadget === 'photon' ? <PhotoAccessToken/> : null;
 	const gadgetTasks = GADGETS[this.props.params.gadget].tasks.concat(GENERAL_TASKS);
         return (
-            <div className="app-wrapper gadget">
+            <div className="gadget">
                 <div>
                     <Article article={intro} />
                 </div>

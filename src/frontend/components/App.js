@@ -19,14 +19,14 @@ module.exports = React.createClass({
         const gadgets = Object.keys(GADGETS);
 	const tasks = getAllTasks(GENERAL_TASKS, gadgets);
         return (
-            <div className="app-wrapper">
-                <div className="">
+            <div>
+                <div className="app-content">
                     <h1>Getting started!</h1>
                     {gadgets.map(gadget => 
                         <ul key={gadget}><Link to={'device/' + gadget}>{GADGETS[gadget].name}</Link></ul>
                     )}
                 </div>
-                <div className="">
+                <div>
                     <h1>Tasks</h1>
                     <Tasks tasks={tasks} />
                 </div>

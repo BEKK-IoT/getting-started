@@ -12,7 +12,7 @@ module.exports = React.createClass({
     render() {
     	if (this.props.params)
         return (
-            <div><Article article={getTaskURL(this.props.params)} /></div>
+            <div className="app-wrapper"><Article article={getTaskURL(this.props.params)} /></div>
         )
     }
 });
