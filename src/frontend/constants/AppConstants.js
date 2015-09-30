@@ -14,7 +14,7 @@ const AppConstants = {
     		tasks: []
     	}
     },
-    GENERAL_TASKS: ['game/play', 'lamp/light', 'sphero']
+    GENERAL_TASKS: ['game/play', 'lamp/controll', 'sphero']
 };
 
 module.exports = AppConstants;
