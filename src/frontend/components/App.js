@@ -1,21 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { GADGETS } from '../constants/AppConstants';
+import { GADGETS, GENERAL_TASKS } from '../constants/AppConstants';
 import Gadget from './Gadget';
 import Tasks from './Tasks';
 
-function getAllTasks(gadgets) {
-    return Object.keys(gadgets)
-        .map(gadget => gadgets[gadget].tasks)
-        .reduce((allTasks, tasks) => {
-            tasks.forEach(t => allTasks.push(t));
-            return allTasks;
-        } , []);
+function getAllTasks(generalTask, gadgets) {
+    let gadgetsTask = [];
+    gadgets.map(gadget => {
+	console.log(GADGETS[gadget].tasks);
+	gadgetsTask = gadgetsTask.concat(GADGETS[gadget].tasks);
+    })
+    gadgetsTask = gadgetsTask.concat(GENERAL_TASKS);
+    return gadgetsTask;
 }
 
 module.exports = React.createClass({
     render() {
         const gadgets = Object.keys(GADGETS);
+	const tasks = getAllTasks(GENERAL_TASKS, gadgets);
         return (
             <div className="app-wrapper">
                 <div className="">
@@ -26,7 +28,7 @@ module.exports = React.createClass({
                 </div>
                 <div className="">
                     <h1>Tasks</h1>
-                    {gadgets.map(gadget => <Tasks gadget={gadget} />)}
+                    <Tasks tasks={tasks} />
                 </div>
             </div>
         )
