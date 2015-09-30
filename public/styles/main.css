@@ -4,6 +4,10 @@ body {
 h1, h2 {
 	color: #ffffff;
 }
+.feedback {
+	margin-top:30px;
+	text-decoration: underline;
+}
 .app-wrapper {
 	width: 700px;
 	margin: auto;
@@ -65,4 +69,8 @@ input[type="search"] {
 
 .export-token-content{
 	padding-top: 10px;
+}
+
+img{
+	max-height: 300px;
 }

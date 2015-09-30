@@ -9,6 +9,7 @@ const fb = new firebase(TEAM);
 const board = new five.Board();
 
 board.on("ready", function() {
+  //use pin 13 for the LED
   const led = new five.Led(13);
 
   // Send a greet event to firebase

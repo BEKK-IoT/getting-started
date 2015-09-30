@@ -14,12 +14,10 @@ const board = new five.Board({
   })
 });
 
-
 board.on("ready", function() {
   const led = new five.Led("D7");
   // Send a greet event to firebase
   fb.send('greet', {name: 'world'});
-
   // Wait for a greet event from firebase to turn the led on
   fb.on('greet', `users/${TEAM}`, () => led.off());
 });
