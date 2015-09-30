@@ -30,4 +30,6 @@ board.on("ready", function() {
 });
 ```
 
+` `
+
 - Potentiometer returns values from the range 0-1024. Use the value to control the RGB light range for the Sphero.

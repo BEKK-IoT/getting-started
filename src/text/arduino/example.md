@@ -1,6 +1,6 @@
 ## Example: Blinking LED
 
-Example usage of libraries to make a blinking LED.
+` `
 
 ```js
 import { firebase, five } from 'devices-core';

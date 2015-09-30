@@ -31,6 +31,7 @@ board.on("ready", function() {
 });
 ```
 
+` `
 
 - Send an "greet" event with msg "hello" to another team when pressing the button the first time.
 - Send an "greet" event with msg "bye" to another team when pressing the button the second time.

@@ -1,7 +1,7 @@
 ## Getting familier with the libraries
 
-All the devices shares a common library **devices-core**, the library consist of two wrappers to make your life easy.
-One wrapper for Firebase and one wrapper for johnny-Five.
+All the devices shares a common library **devices-core**. The library consist of two wrappers to make your life easier.
+One wrapper for Firebase and one wrapper for Johnny-Five.
 
 All the libraries and examples are written in Ecmascript 6 and uses the babel transpiler.
 
@@ -26,3 +26,4 @@ fb.on('greet', `users/${TEAM}`, events => {
   console.log(`Hello, ${event.msg}!`))
 }
 ```
+

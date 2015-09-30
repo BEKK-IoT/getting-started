@@ -24,11 +24,11 @@ module.exports = React.createClass({
                     {getToken}
                 </div>
                 <div>
-                    <Article article='run' />
-                </div>
-                <div>
                     <Article article='setup' />
                     <Article article={five} />
+                </div>
+                <div>
+                    <Article article='run' />
                 </div>
                 <div>
                     <Article article={example}/>

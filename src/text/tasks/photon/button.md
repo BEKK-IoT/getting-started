@@ -2,8 +2,7 @@
 
 ![Button](http://johnny-five.io/img/breadboard/button.png)
 
-Ignore that it is a arduino that is the example, focus on the pins.
-They are the same on the photon!
+The picture above is an ardiuno. This is a Photon. The pins are different, but the circuit is the same. 
 
 Example code to control the button
 
@@ -39,6 +38,8 @@ board.on("ready", function() {
   });
 });
 ```
+
+` `
 
 - Try to turn on/off the lamp with the button.
 

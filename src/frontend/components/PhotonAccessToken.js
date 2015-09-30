@@ -29,8 +29,11 @@ module.exports = React.createClass({
 			<div className="export-token-content">
 				<div>
 					To be able to use the photon we need to export some environment variables.
-					On the back side of the photon box there should be a serial-number.
-					Type in the last four digits/letters in the box below to get your access tokens.
+					On the back side of your photon box there should be a serial-number, 
+					type in the follow letters in the box below:
+					<div>
+						<code>XXXX-XXXXXX-<span className="red">XXXX</span>-X</code>
+					</div>
 				</div>
 				<div className="token-form">
 					<div className="token-form-header">Find your token</div>
