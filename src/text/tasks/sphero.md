@@ -15,5 +15,5 @@ fb.on('accel', 'gadgets/sphero', (values) => console.log('Nice!'));
 fb.on('gyro', 'gadgets/sphero', (values) => console.log('Nice!')); 
 
 // But wait, there is more. Change the color:
-fb.send('color', '{red: 255, blue: 0, green: 0}', 'gadgets/sphero');
+fb.send('color', {red: 255, blue: 0, green: 0}, 'gadgets/sphero');
 ```
