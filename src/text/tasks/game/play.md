@@ -9,5 +9,6 @@ API:
 //This moves the character left
 fb.send('move', 'left', 'gadgets/game');
 //Move him up right/left?
-fb.send('move', 'upright', 'gadgets/game');  
+fb.send('move', 'upright', 'gadgets/game'); 
+//Other ways to move are, right and upleft. So left, right, upright, upleft
 ```
