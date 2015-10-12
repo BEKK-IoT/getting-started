@@ -24,7 +24,7 @@ const fb = new firebase(TEAM);
 fb.send('greet', {msg: 'world'});
 
 //listen for your teams greet event and log the msg
-fb.on('greet', `users/${TEAM}`, events => {
+fb.on('greet', `users/${TEAM}`, event => {
   console.log(`Hello, ${event.msg}!`))
 }
 ```
