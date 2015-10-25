@@ -15,7 +15,7 @@ const board = new five.Board({
 });
 
 board.on("ready", function() {
-  const led = new five.Led(11);
+  const led = new five.Led("D7");
   led.blink(500);
 });
 ```
