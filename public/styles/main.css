@@ -77,3 +77,6 @@ input[type="search"] {
 img{
 	max-height: 300px;
 }
+td {
+	padding-right: 30px;
+}

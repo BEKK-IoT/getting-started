@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import { GADGETS, GENERAL_TASKS } from '../constants/AppConstants';
 import Gadget from './Gadget';
 import Tasks from './Tasks';
+import Keys from './Keys';
 
 function getAllTasks(generalTask, gadgets) {
     let gadgetsTask = [];
@@ -17,14 +18,15 @@ function getAllTasks(generalTask, gadgets) {
 module.exports = React.createClass({
     render() {
         const gadgets = Object.keys(GADGETS);
-	const tasks = getAllTasks(GENERAL_TASKS, gadgets);
+	    const tasks = getAllTasks(GENERAL_TASKS, gadgets);
         return (
             <div>
                 <div className="app-content">
                     <h1>Getting started!</h1>
-                    {gadgets.map(gadget => 
+                    {gadgets.map(gadget =>
                         <ul key={gadget}><Link to={'device/' + gadget}>{GADGETS[gadget].name}</Link></ul>
                     )}
+                    <ul><Link to={'keys/'}>Mac keybindings</Link></ul>
                 </div>
                 <div>
                     <h1>Tasks</h1>
