@@ -21,8 +21,8 @@ board.on("ready", function() {
 
 Before starting the application we want to change our team name. To do this we simply change the content of `TEAM`-variable.
 
-After we have changed our team we are ready to start the application.
-To start the application open a terminal window and navigate to the project folder, then type:
+After we have changed our team name we are ready to start the application.
+Open a terminal window and navigate to the project folder, then type:
 
 ```sh
 npm run app

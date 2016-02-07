@@ -1,13 +1,12 @@
 ## Getting familiar with the libraries
 
 We are using two libraries, Johnny-five and Firebase.
-Johnny-five is an abstraction that makes it easy for us to write programs for micro-controllers
-and Firebase is a cloud-database with a very neat API that makes it easy to share and store data.
+Johnny-five is an abstraction that makes it easy for us to write programs for micro-controllers.
+Firebase is a cloud-database with a very neat API that makes it easy to share and store data.
 
 ### Johnny-Five
 [Johnny-Five](http://johnny-five.io/api/) is a JavaScript Robotics programming framework.
 It allows us to control a bunch of different micro-controllers with JavaScript.
-In this workshop we are going to use an arduino as our micro-controller.
 
 In the following code example we use Johnny-five to interact with a LED.
 
@@ -33,7 +32,7 @@ board.on("ready", function() {
 [Firebase](https://www.firebase.com/docs/) is a realtime cloud database which allows you to store and synchronized data.
 What makes Firebase interesting is that it makes it easy to synchronize data between multiple clients.
 
-**NB:** Firebase will only send events when the value is a new value. So when two people sending a light on value, only one event will be sendt!
+Firebase will only send new events when the content of the event is changed.
 
 In the following code example we use Firebase to send and receive events.
 
