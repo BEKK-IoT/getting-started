@@ -6,7 +6,7 @@ Find the JavaScript file `app.js` in the project folder, this file should contai
 // Import the Firebase and Johnny-five libraries
 import { firebase, five } from 'devices-core';
 // Your team-name
-const TEAM = 'my-awsome-team-name';
+const TEAM = 'team-unicorns';
 // Create a connection to Firebase
 const fb = new firebase(TEAM);
 // Create a representation of your Arduino board
