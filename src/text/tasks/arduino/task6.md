@@ -1,11 +1,17 @@
 # Let there be light - 3
 
+Now, it's time to try doing things on your own. Use the code you have written in the previous tasks to complete this task. The goal is to turn a led 'off' when the light is bright and 'on' when the light is dim.
+
 ![Photoresistor](http://johnny-five.io/img/breadboard/photoresistor.png)
 ![Led](https://www.arduino.cc/en/uploads/Tutorial/ExampleCircuit_bb.png)
 
 
-Read values from photoresistor(lyssensor) or get data from another group.
-Then turn led off when the light is bright and on when the light is dim.
+Start with creating a led and photoresistor. First, use the data from your photoresistor to turn the led on and off. Then use values from another group to do the same. 
+
+Remember: 
+- You have to send data to firebase for other groups to read them
+- 0 = dark, 1024 = light
+
 
 ```js
 import { firebase, five } from 'devices-core';
@@ -20,7 +26,6 @@ board.on("ready", function() {
     //TODO: Create a photoresitor
     //TODO: Create a led
 
-    // "data" get the current reading from the photoresistor
     photoresistor.on("data", function() {
        //TODO: Turn led 'on', on low values and 'off' on high values
     });
