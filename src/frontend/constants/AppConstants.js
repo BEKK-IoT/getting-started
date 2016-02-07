@@ -8,22 +8,27 @@ const AppConstants = {
     		tasks: [
 				{
 					path: 'arduino/blinking_led',
-					name: 'Blinking leds'
-				}, {
-					path: 'arduino/button',
-					name: 'Button'
-				}, {
+					name: '1: Guide - Blinking leds'
+				},
+				{
+					path: 'arduino/firebase-lamp',
+					name: '2: Guide - Controlling the lamp'
+				},
+				{
 					path: 'arduino/potentiometer',
-					name: 'Potentiometer'
-				}, {
+					name: '3: Intro - Potentiometer'
+				},
+				{
 					path: 'arduino/task4',
-					name: 'Task 4 - '
-				}, {
+					name: '4: Something'
+				},
+				{
 					path: 'arduino/task5',
-					name: 'Task 5 - '
-				}, {
+					name: '5: Something else'
+				},
+				{
 					path: 'arduino/task6',
-					name: 'Task 6'
+					name: '6: Good news'
 				}]
 
     	}
