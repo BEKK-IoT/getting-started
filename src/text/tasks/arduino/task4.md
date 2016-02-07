@@ -1,4 +1,4 @@
-# Let there be ligh - 1
+# Let there be light - 1
 
 In this example we are going to read values from a photoresistor.
 A photoresistor messures light intensity. It reads values between 0 and 1024,
@@ -8,8 +8,7 @@ See how to conncect the photoresistor sensor on the diagram bellow.
 ![Photoresistor](http://johnny-five.io/img/breadboard/photoresistor.png)
 
 
-First, set up board and firebase as in the other tasks.
-Then create a new `photoresistor. 
+We create the board and firebase object(fb) as usual. Then we create a new `photoresistor, so that we can read data from the photoresistor by listning to the data event.
 
 ```js
 import { firebase, five } from 'devices-core';
