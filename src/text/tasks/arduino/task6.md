@@ -1,4 +1,4 @@
-# Let there be ligh - 3
+# Let there be light - 3
 
 ![Photoresistor](http://johnny-five.io/img/breadboard/photoresistor.png)
 ![Led](https://www.arduino.cc/en/uploads/Tutorial/ExampleCircuit_bb.png)
