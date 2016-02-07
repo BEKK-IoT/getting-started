@@ -19,13 +19,9 @@ module.exports = React.createClass({
                 </div>
                 <div>
                     <Article article='setup' />
-                    <Article article={five} />
                 </div>
                 <div>
                     <Article article='run' />
-                </div>
-                <div>
-                    <Article article={example}/>
                 </div>
                 <div>
                     <h2>Tasks</h2>
