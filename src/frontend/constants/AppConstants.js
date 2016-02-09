@@ -31,7 +31,7 @@ const AppConstants = {
 					name: '6: Control a LED with the Light sensor'
 				},
 				{
-					path: 'arduino/firebase-z',
+					path: 'arduino/neopixel',
 					name: '7: Neopixels, multi colored LEDs'
 				},
 				{
