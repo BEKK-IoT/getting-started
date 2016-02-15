@@ -45,7 +45,7 @@ Example with 'test' group.
 
 ```js
 
-fb.on('lightvalue', `users/test`, function(value){
+fb.on('lightvalue', 'users/test', function(value){
   //write value to terminal
   console.log(value));
 });
