@@ -490,7 +490,7 @@ label {
 	}
 }
 .u-container {
-	background:#252525;
+	/*background:#252525;*/
 	display: block;
 	padding: 0 40px;
 	margin: 27px auto;
