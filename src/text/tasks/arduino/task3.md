@@ -19,8 +19,9 @@ board.on("ready", function() {
   //Do something with the led and button
 });
 ```
+` `
 
-#### TIP:
+#### Tip:
 To turn on the led use:
 ```js
 led.on();
@@ -30,6 +31,8 @@ To turn of the led use:
 ```js
 led.off();
 ```
+
+` `
 
 #### Ekstra tip:
 You can get through this taks by copy pasting the code shown in this and the previous two tasks.
