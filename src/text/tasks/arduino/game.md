@@ -24,9 +24,21 @@ Values that can be read
 ```
 ` `
 
-Events
+Joystick Events
 - change: The "change" event is emitted whenever the value of an axis changes.
 - data: The "data" event is fired as frequently as the user defined freq will allow in milliseconds.
+
+` `
+
+How to control the player through firebase
+
+```js
+//This moves the character left
+fb.send('move', 'left', 'gadgets/game');
+//Move him up right/left?
+fb.send('move', 'upright', 'gadgets/game'); 
+//Other ways to move are, right and upleft. So left, right, upright, upleft
+```
 
 ` `
 
