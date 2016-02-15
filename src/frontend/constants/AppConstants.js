@@ -39,8 +39,8 @@ const AppConstants = {
 					name: '8: Win the game'
 				},
 				{
-					path: 'arduino/firebase-e',
-					name: '9: Challenge - Aim for the blink'
+					path: 'arduino/task9',
+					name: '9: Challenge - Laser Tag'
 				}]
 
     	}
