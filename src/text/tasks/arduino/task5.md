@@ -1,6 +1,6 @@
-# Let there be light - 2
+# Read from firebase
 
-In this task we are going to listen to values other groups read from their photoresistor, through firebase. The point of this task is to send and recieve data thought the cloud, connecting multiple devices. We are still going to use the code written in part 1, so that the other groups can read your values.
+In this task we are going to use values other groups read from their photoresistor, through firebase. The point of this task is to send and recieve data thought the cloud, connecting multiple devices. We are still going to use the code written in part 1, so that the other groups can read your values.
 
 
 We continue with the code from part1. Let the fb object listen to the event 'lightvalue'. Change 'other-group-team-name' with the name of the group you want to get your data from. Lastly, we print out the value to the terminal.
