@@ -2,8 +2,8 @@
 
 In this example we are going to read values from a photoresistor.
 A photoresistor messures light intensity. It reads values between 0 and 1024,
-where 0 is darkness and 1024 is very bight light.
-See how to conncect the photoresistor sensor on the diagram bellow.
+where 0 is darkness and 1024 is very bright light.
+See how to connect the photoresistor sensor on the diagram bellow.
 
 ![Photoresistor](http://johnny-five.io/img/breadboard/photoresistor.png)
 
