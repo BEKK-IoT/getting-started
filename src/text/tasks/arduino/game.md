@@ -1,23 +1,11 @@
 # Control the game
 
-In this task you are going to control the player on the dashboard game.
-You can choose to use the potentiometer and a button or a joystick.
-
-Potentiometer + button:
-
-![Potentiometer](http://johnny-five.io/img/breadboard/potentiometer.png)
-![Button](http://johnny-five.io/img/breadboard/button.png)
-
-```js
-  let potentiometer = new five.Sensor({
-    pin: "A2",
-    freq: 250
-  });
-```
-
-Joystick:
+In this task you are going to control the player on the dashboard game by using a joystick.
+Connect the joystick using the diagram below.
 
 ![Joystick](https://raw.githubusercontent.com/rwaldron/johnny-five/master/docs/breadboard/joystick-sparkfun.png)
+
+How to initiate the joystick
 
 ```js
 let joystick = new five.Joystick({
@@ -25,8 +13,25 @@ let joystick = new five.Joystick({
   invertY: true
 });
 ```
+` `
 
-Task:
+Values that can be read
+
+```js
+    1
+1   *  -1
+   -1  
+```
+` `
+
+Events
+- change: The "change" event is emitted whenever the value of an axis changes.
+- data: The "data" event is fired as frequently as the user defined freq will allow in milliseconds.
+
+` `
+
+
+Use what you have learned in the previous exercies and the information above to control the player on the dashboard game.
 
 
 ```js

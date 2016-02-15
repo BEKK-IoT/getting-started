@@ -35,7 +35,7 @@ const AppConstants = {
 					name: '7: Neopixels, multi colored LEDs'
 				},
 				{
-					path: 'arduino/firebase-g',
+					path: 'arduino/game',
 					name: '8: Win the game'
 				},
 				{

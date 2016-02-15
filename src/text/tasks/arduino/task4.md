@@ -1,4 +1,4 @@
-# Let there be light - 1
+# Light sensor
 
 In this example we are going to read values from a photoresistor.
 A photoresistor messures light intensity. It reads values between 0 and 1024,
