@@ -7,15 +7,15 @@ const AppConstants = {
     		git: 'https://github.com/BEKK-IoT/arduino-uno.git',
     		tasks: [
 				{
-					path: 'arduino/blinking_led',
+					path: 'arduino/task1',
 					name: '1: Guide - Blinking LEDs'
 				},
 				{
-					path: 'arduino/firebase-lamp',
+					path: 'arduino/task2',
 					name: '2: Guide - Controlling the lamp'
 				},
 				{
-					path: 'arduino/firebase-x',
+					path: 'arduino/task3',
 					name: '3: Turn on a LED with a button'
 				},
 				{
