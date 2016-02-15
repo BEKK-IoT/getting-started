@@ -8,7 +8,6 @@ We continue with the code from part1. Let the fb object listen to the event 'lig
 
 ```js
 import { firebase, five } from 'devices-core';
-import { five } from 'devices-core';
 
 const TEAM = 'my-awsome-team-name';
 const fb = new firebase(TEAM);
@@ -31,9 +30,9 @@ board.on("ready", function() {
   // Listen to an event from another group from firebase.
   // lightvalue = eventname, see graph or task 4
   // users/other-group-team-name, change to an actual teamname 
-  fb.on('lightvalue', `users/other-group-team-name`, function(value){
+  fb.on('lightvalue',  'users/other-group-team-name', function(value){
     //write value to terminal
-    console.log(value));
+    console.log(value);
   });
 
 });

@@ -2,17 +2,16 @@
 
 In this example we are going to read values from a photoresistor.
 A photoresistor messures light intensity. It reads values between 0 and 1024,
-where 0 is darkness and 1024 is very bright light.
+where 0 is darkness and 1024 is very bright.
 See how to connect the photoresistor sensor on the diagram bellow.
 
 ![Photoresistor](http://johnny-five.io/img/breadboard/photoresistor.png)
 
 
-We create the board and firebase object(fb) as usual. Then we create a new `photoresistor, so that we can read data from the photoresistor by listning to the data event.
+We create the board and firebase object(fb) as usual. Then we create a new `photoresistor, so that we can read data from the sensor by listning to the data event.
 
 ```js
 import { firebase, five } from 'devices-core';
-import { five } from 'devices-core';
 
 const TEAM = 'my-awsome-team-name';
 const fb = new firebase(TEAM);

@@ -15,7 +15,6 @@ Remember:
 
 ```js
 import { firebase, five } from 'devices-core';
-import { five } from 'devices-core';
 
 const TEAM = 'my-awsome-team-name';
 const fb = new firebase(TEAM);
