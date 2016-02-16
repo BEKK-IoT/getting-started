@@ -44,7 +44,8 @@ board.on('ready', function() {
 });
 ```
 
-Lastly it's time to run the code:
+
+Run the code:
 
 ```sh
 npm run app

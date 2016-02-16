@@ -29,10 +29,10 @@ board.on("ready", function() {
 
 ### Firebase
 
-[Firebase](https://www.firebase.com/docs/) is a realtime cloud database which allows you to store and synchronized data.
-What makes Firebase interesting is that it makes it easy to synchronize data between multiple clients.
+[Firebase](https://www.firebase.com/docs/) is a realtime cloud database which allows you to store and synchronize data.
+What makes Firebase interesting is that it makes it really easy to synchronize data between multiple clients.
 
-Firebase will only send new events when the content of the event is changed.
+Firebase will only send new events when the content of the realtime database is changed. And the changes always overrides the older values, so it's not a database for storing history.
 
 In the following code example we use Firebase to send and receive events.
 

@@ -10,7 +10,7 @@ See the diagram bellow to see how this should be done.
 ![Led](http://johnny-five.io/img/led-scene-0.gif)
 
 
-The LED has a positive (+) and a negative (-) side. The slightly crooked pin is the positive one.
+The LED has a positive (+) and a negative (-) side. The slightly crooked/longer pin is the positive one.
 Current flows from positive to negative. This means that you should connect the Arduinos voltage pin to the positive
 end of the LED. The negative end should be connected to ground (GND).
 If the LED doesn't work, you probably have connected it the wrong way. Try to flip it around.
@@ -35,7 +35,7 @@ board.on("ready", function() {
 });
 ```
 
-Lastly it's time to run the code:
+Run the code:
 
 ```sh
 npm run app
