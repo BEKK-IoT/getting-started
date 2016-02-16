@@ -6,9 +6,9 @@ Now, it's time to try doing things on your own. Use the code you have written in
 ![Led](https://www.arduino.cc/en/uploads/Tutorial/ExampleCircuit_bb.png)
 
 
-Start with creating a LED and photoresistor. First, use the data from your photoresistor to turn the LED on and off. Then use values from another group to do the same. 
+Start with creating a LED and photoresistor. First, use the data from your photoresistor to turn the LED on and off. Then use values from another group to do the same.
 
-Remember: 
+Remember:
 - You have to send data to firebase for other groups to read them
 - 0 = dark, 1024 = light
 
@@ -29,6 +29,7 @@ board.on("ready", function() {
        //TODO: Turn LED 'on', on low values and 'off' on high values
     });
 
-    //TODO: Use data from another group through firebase to control your LED. 
+    //TODO: Use data from another group through
+    //      firebase to control your LED. 
 });
 ```
