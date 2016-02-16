@@ -55,11 +55,26 @@ board.on('ready', function() {
 
 ` `
 
-## Tasks
+## Tasks 
 
-* Make a light blink 
-* Turn five lights on
-* Make a loop that turns on one and one light, 
-going from light #1 to light #60.
-* Create the rainbow
+```
+import { firebase, five } from 'devices-core';
+const TEAM = 'team-unicorns';
+const fb = new firebase(TEAM);
+const board = new five.Board();
+
+board.on('ready', function() {
+
+  // TODO: Make a light blink 
+
+  // TODO: Turn five lights on
+
+  // TODO: Create a rainbow
+  
+  // TODO: Make a loop that turns on one and one light,
+  //       going from light #1 to light #60.
+
+
+});
+```
 
