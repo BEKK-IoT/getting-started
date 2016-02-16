@@ -27,7 +27,7 @@ To turn on the led use:
 led.on();
 ```
 
-To turn of the led use:
+To turn off the led use:
 ```js
 led.off();
 ```
@@ -35,4 +35,4 @@ led.off();
 ` `
 
 #### Ekstra tip:
-You can get through this taks by copy pasting the code shown in this and the previous two tasks.
+You can get through this taks by copy pasting the code showed here and the previous two tasks.
