@@ -11,7 +11,7 @@ See the diagram bellow to see how this should be done.
 
 
 The LED has a positive (+) and a negative (-) side. The slightly crooked/longer pin is the positive one.
-Current flows from positive to negative. This means that you should connect the Arduinos voltage pin to the positive
+Current flows from positive to negative. This means that you should connect the Arduinos voltage pin (pin 13) to the positive
 end of the LED. The negative end should be connected to ground (GND).
 If the LED doesn't work, you probably have connected it the wrong way. Try to flip it around.
 
@@ -28,8 +28,8 @@ const board = new five.Board();
 
 // Wait for the board to get ready before we do anything
 board.on("ready", function() {
-  // Tell johnny-five that we have a LED connected on port 11
-  const led = new five.Led(11);
+  // Tell johnny-five that we have a LED connected on port 13
+  const led = new five.Led(13);
   // Interact with the LED
   led.blink(500);
 });

@@ -16,7 +16,8 @@ board.on("ready", function() {
   const led = new five.Led(x);
   const button = new five.Button(y);
 
-  //Do something with the led and button
+  //TODO turn the led on when pressing the button
+  //TODO turn the led off when releasing the button
 });
 ```
 ` `
