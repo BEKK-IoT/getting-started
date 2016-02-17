@@ -1,6 +1,6 @@
 # Laser Tag
 
-Its time for a real challenge and put everything you have learned to the test. We want you to work togheter with another group and make a naive laser tag application.
+Its time for a real challenge and put everything you have learned to the test. We want you to work togheter with another group and make a native laser tag application.
 
 ![Lasers](http://www.thehindu.com/multimedia/dynamic/02366/08MP_LAZERTAG1_2366457g.jpg)
 

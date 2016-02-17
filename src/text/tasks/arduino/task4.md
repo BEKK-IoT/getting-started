@@ -8,7 +8,7 @@ See how to connect the photoresistor sensor on the diagram bellow.
 ![Photoresistor](http://johnny-five.io/img/breadboard/photoresistor.png)
 
 
-We create the board and firebase object(fb) as usual. Then we create a new photoresistor, so that we can read data from the sensor by listning to the data event.
+We create the board and firebase object(fb) as usual. Then we create a new `photoresistor`, so that we can read data from the sensor by listening to the data event.
 
 ```js
 import { firebase, five } from 'devices-core';
