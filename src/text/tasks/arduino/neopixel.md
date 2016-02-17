@@ -3,14 +3,14 @@
 ![Button](https://learn.adafruit.com/system/assets/assets/000/013/714/medium640/leds_Ring12.jpg)
 
 So far we have controlled a single light with a single color.
-We are now going to control multiple multi-colored LEDs and we
-are going to use RGB values to control the color of the lights.
+We are now going to control multiple multi-colored LEDs 
+and use RGB values to control the color of the lights.
 To see how RGB colors work check out the [Adobe Color Picker](https://color.adobe.com/).
 
 
 ## API
 
-The API accept a list of light-objects.
+The API accepts a list of light-objects.
 Each light-object has an id and the RGB colors.
 The data format for one light is `[id, r, g, b]`,
 so to change the second light to blue you would write
