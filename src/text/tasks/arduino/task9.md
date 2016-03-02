@@ -50,5 +50,3 @@ You will need to complete the following steps:
 
 ` `
 
-## Tip
-Practice! There may be more laser shooting in your not so far future.

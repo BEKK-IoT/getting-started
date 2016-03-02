@@ -38,16 +38,3 @@ board.on("ready", function() {
 });
 ```
 
-
-If there is no other groups emitting their data, you can use 'test'
-
-Example with 'test' group.
-
-```js
-
-fb.on('lightvalue', 'users/test', function(value){
-  //write value to terminal
-  console.log(value));
-});
-
-```
