@@ -12,10 +12,16 @@ module.exports = React.createClass({
         const five = this.props.params.gadget + '/johnny-five';
         const example = this.props.params.gadget + '/example';
         const gadgetTasks = GADGETS[this.props.params.gadget].tasks.concat(GENERAL_TASKS);
+        const getToken = this.props.params.gadget === 'photon' ? <PhotonAccessToken/> : null;
         return (
             <div className="gadget">
                 <div>
                     <Article article={intro} />
+                </div>
+                <div>
+                    <Article article={install}/>
+                    <InstallScript gadget={this.props.params.gadget} />
+                    {getToken}
                 </div>
                 <div>
                     <Article article='setup' />
