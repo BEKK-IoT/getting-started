@@ -33,19 +33,18 @@ const board = new five.Board({
 
 //wait for the board to be ready
 board.on('ready', function() {
+
+  let toggle = false;
+
   // Create a representation of a button
-  const button = new five.Button(2);
+  const button = new five.Button('D2');
 
   // The button is pressed
-  button.on('down', function() {
-    // Turn the lamp on through Firebase
-    fb.send('switch', true, 'gadgets/lamp');
-  });
-
-  // The button is released
+  // Photon register both up and down as an up-event.
   button.on('up', function() {
-    // Turn the lamp off through Firebase
-    fb.send('switch', false, 'gadgets/lamp');
+    // Toggle lamp through Firebase
+    toggle = !toggle;
+    fb.send('switch', toggle, 'gadgets/lamp');
   });
 });
 ```
