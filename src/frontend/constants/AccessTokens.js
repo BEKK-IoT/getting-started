@@ -1,5 +1,5 @@
 module.exports = {
-	token: '68912ba4bc847fe5af62f8d9f65c26efb6f40cc6',
+	token: 'c22ee2fa35f557053007bb25081b56dc3ff2fcb3',
 	devices: {
 		'YCWN': '400033000347343138333038',
 		'3CSS': '350027000347343138333038',
