@@ -8,10 +8,10 @@ So the first code is from the lightsensor example. Then we let the fb object lis
 
 ```js
 import { firebase, five } from 'devices-core';
+import Particle from 'particle-io';
 
 const TEAM = 'my-awsome-team-name';
 const fb = new firebase(TEAM);
-import Particle from 'particle-io';
 
 const board = new five.Board({
   io: new Particle({

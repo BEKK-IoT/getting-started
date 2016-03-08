@@ -12,10 +12,10 @@ We create the board and firebase object(fb) as usual. Then we create a new `phot
 
 ```js
 import { firebase, five } from 'devices-core';
+import Particle from 'particle-io';
 
 const TEAM = 'my-awsome-team-name';
 const fb = new firebase(TEAM);
-import Particle from 'particle-io';
 
 const board = new five.Board({
   io: new Particle({
