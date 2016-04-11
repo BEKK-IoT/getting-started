@@ -23,7 +23,7 @@ would write `[[2, 255, 0, 0], [5, 255, 0, 0]]`.
 Changing color of a single light:
 
 ```
-fb.send('light', '[[1, 20, 230, 40]]', 'gadgets/neopixel');
+fb.send('light', [[1, 20, 230, 40]], 'gadgets/neopixel');
 ```
 
 
@@ -33,7 +33,7 @@ fb.send('light', '[[1, 20, 230, 40]]', 'gadgets/neopixel');
 Changing color of multiple lights (up to a max of 15):
 
 ```
-fb.send('light', '[[1, 255, 0, 30], [2, 0, 70, 0]]', 'gadgets/neopixel');
+fb.send('light', [[1, 255, 0, 30], [2, 0, 70, 0]], 'gadgets/neopixel');
 ```
 
 
@@ -49,7 +49,7 @@ const fb = new firebase(TEAM);
 const board = new five.Board();
 
 board.on('ready', function() {
-    fb.send('light', '[[1, 40, 40, 233]]', 'gadgets/neopixel');
+    fb.send('light', [[1, 40, 40, 233]], 'gadgets/neopixel');
 });
 ```
 
