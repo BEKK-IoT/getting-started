@@ -18,7 +18,7 @@ const board = new five.Board({
 });
 
 board.on("ready", function() {
-  button = new five.Button("D2");
+  button = new five.Button('D2');
 
   // "down" the button is pressed
   button.on("down", function() {

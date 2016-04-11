@@ -28,7 +28,7 @@ const board = new five.Board();
 //wait for the board to be ready
 board.on('ready', function() {
   // Create a representation of a button
-  const button = new five.Button('D2');
+  const button = new five.Button(2);
 
   // The button is pressed
   button.on('down', function() {
