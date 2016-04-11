@@ -84,6 +84,10 @@ const AppConstants = {
 				{
 					path: 'photon/task9',
 					name: 'Photon 9: Challenge - Laser Tag'
+				},
+				{
+					path: 'sphero',
+					name: 'Photon 9: Sphero'
 				}
 			]
 
