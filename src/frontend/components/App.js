@@ -31,6 +31,7 @@ module.exports = React.createClass({
                 <div>
                     <h1>Tasks</h1>
                     <Tasks tasks={GADGETS['arduino'].tasks} /><br/>
+                    <Tasks tasks={GADGETS['photon'].tasks} /><br/>
                 </div>
 		<h2 className='feedback'><a target='_blank' href='https://docs.google.com/forms/d/1ioEILHN1DucUdxUqF6sheu7twzxsVFnuwIx3fqK0-NE/viewform'>Feedback</a></h2>
             </div>
