@@ -35,7 +35,7 @@ const board = new five.Board({
 // Wait for the board to get ready before we do anything
 board.on("ready", function() {
   // Tell johnny-five that we have a LED connected on port 13
-  const led = new five.Led(13);
+  const led = new five.Led("D5");
   // Interact with the LED
   led.blink(500);
 });
