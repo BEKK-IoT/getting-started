@@ -2,8 +2,6 @@
 
 ![Button](http://johnny-five.io/img/breadboard/button.png)
 
-The picture above is an ardiuno. This is a Photon. The pins are different, but the circuit is the same. 
-
 Example code to control the button
 
 ```js

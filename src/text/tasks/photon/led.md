@@ -2,7 +2,6 @@
 
 ![Led](https://www.arduino.cc/en/uploads/Tutorial/ExampleCircuit_bb.png)
 
-The picture above is an ardiuno. This is a Photon. The pins are different, but the circuit is the same. 
 
 
 ```js
