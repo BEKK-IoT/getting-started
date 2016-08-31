@@ -38,7 +38,7 @@ const board = new five.Board({
 
 //wait for the board to be ready
 board.on('ready', function() {
-  const laser = new five.Led(9);
+  const laser = new five.Led("D5");
 
   //turn the laser on
   laser.on();
