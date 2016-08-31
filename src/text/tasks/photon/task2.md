@@ -5,7 +5,7 @@ We are now going to use a button with the Arduino to control a lamp.
 
 The diagram below shows how we can connect a button to the Arduino.
 
-![Button](http://johnny-five.io/img/breadboard/button.png)
+![Button](https://raw.githubusercontent.com/BEKK-IoT/getting-started/master/fritzing/task2_bb.jpg)
 
 The button works as a switch. The Arduion is contansly sending electricity to the button while listening on the connected pin 2 for a completed circut. When the button is pressed the circut is completed and the Arduino will pick up on it.
 

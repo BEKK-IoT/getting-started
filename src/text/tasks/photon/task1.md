@@ -7,7 +7,7 @@ The digital pin "D7" allows us to turn the current on or off.
 The ground (GND) pin receives the current.
 See the diagram bellow to see how this should be done.
 
-![Led](http://johnny-five.io/img/led-scene-0.gif)
+![Led](https://raw.githubusercontent.com/BEKK-IoT/getting-started/master/fritzing/task1_bb.jpg)
 
 
 The LED has a positive (+) and a negative (-) side. The slightly crooked/longer pin is the positive one.

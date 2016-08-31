@@ -2,7 +2,7 @@
 
 Its time for a real challenge and put everything you have learned to the test. We want you to work togheter with another group and make a native laser tag application.
 
-![Lasers](http://www.thehindu.com/multimedia/dynamic/02366/08MP_LAZERTAG1_2366457g.jpg)
+![Lasers](https://raw.githubusercontent.com/BEKK-IoT/getting-started/master/fritzing/task9_bb.jpg)
 
 One team with their Arduino will be responseable for making the laser target, while the other group will be repsonsible for making the laser pistol.
 
