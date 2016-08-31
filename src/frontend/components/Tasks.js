@@ -8,7 +8,7 @@ module.exports = React.createClass({
         return (
         	<div>
         		{this.props.tasks.map(task => 
-        			<ul key={task}><Link to={'task/' + task}>{task}</Link></ul>)
+        			<ul key={task.path}><Link to={'task/' + task.path}>{task.name}</Link></ul>)
         		}
         	</div>
         )

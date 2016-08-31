@@ -1,5 +1,6 @@
 ### Johnny-Five
-[Johnny-Five](http://johnny-five.io/api/) is a JavaScript Robotics programming framework. It allows users to control a bunch of different micro-controllers through JavaScript from their own computers.
+[Johnny-Five](http://johnny-five.io/api/) is a JavaScript Robotics programming framework.
+It allows users to control a bunch of different micro-controllers through JavaScript from their own computers.
 
 To use our Johnny-Five wrapper include the **five** module from the **devices-core**. The following example shows how to make a LED blink:
 

@@ -6,6 +6,9 @@
   "scripts": {
     "serve": "gulp serve"
   },
+  "engines": {
+    "node": "4.3.1"
+  },
   "author": "Vegard Veiset",
   "license": "ISC",
   "dependencies": {

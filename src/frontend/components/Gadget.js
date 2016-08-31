@@ -11,8 +11,8 @@ module.exports = React.createClass({
         const install = this.props.params.gadget + '/install';
         const five = this.props.params.gadget + '/johnny-five';
         const example = this.props.params.gadget + '/example';
-        const getToken = this.props.params.gadget === 'photon' ? <PhotonAccessToken/> : null;
         const gadgetTasks = GADGETS[this.props.params.gadget].tasks.concat(GENERAL_TASKS);
+        const getToken = this.props.params.gadget === 'photon' ? <PhotonAccessToken/> : null;
         return (
             <div className="gadget">
                 <div>
@@ -25,13 +25,9 @@ module.exports = React.createClass({
                 </div>
                 <div>
                     <Article article='setup' />
-                    <Article article={five} />
                 </div>
                 <div>
                     <Article article='run' />
-                </div>
-                <div>
-                    <Article article={example}/>
                 </div>
                 <div>
                     <h2>Tasks</h2>
