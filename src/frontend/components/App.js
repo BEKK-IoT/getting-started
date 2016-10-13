@@ -31,7 +31,6 @@ module.exports = React.createClass({
                 <div>
                     <h1>Tasks</h1>
                     <Tasks tasks={GADGETS['arduino'].tasks} /><br/>
-                    <Tasks tasks={GADGETS['photon'].tasks} /><br/>
                 </div>
             </div>
         )
